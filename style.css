@@ -1,0 +1,274 @@
+body {
+    background: #fff0db;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #47220f;
+    color: white;
+    padding: 30px 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    background: #f8f5ec;
+    padding: 50px;
+    text-align: center;
+}
+
+.chefs-menu-section {
+    background: #f1ebe4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.chefs-menu h2 {
+    font-size: 2.5rem;
+    color: #47220f;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 2;
+    margin: 20px 0;
+}
+
+.menu-list li {
+    margin-bottom: 10px;
+}
+
+/* New Order Link Styling */
+.order-link {
+    display: inline-block;
+    background-color: #47220f;
+    color: #f8f5ec;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.order-link:hover {
+    background-color: #a78060;
+    color: #47220f;
+}
+
+footer {
+    background: #a78060;
+    padding: 50px;
+    color: #f8f5ec;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #f8f5ec;
+}
+
+a:hover {
+    color: #ffcc99;
+}
+
+.logo-img {
+    height: 80px;
+    width: auto;
+}
+
+.store-locator-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.store-locator-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* Contact Us Section */
+#contact-us {
+    background: #f8f5ec;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-form {
+    margin-bottom: 30px;
+    background: #f1ebe4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #47220f;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.submit-button {
+    background: #47220f;
+    color: #f8f5ec;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #a78060;
+    color: #47220f;
+}
+
+.business-hours {
+    margin: 30px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media h2 {
+    font-size: 1.8rem;
+    color: #47220f;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    color: #f8f5ec;
+    background: #47220f;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+    background-color: #a78060;
+    color: #47220f;
+}
+
+.social-link.facebook {
+    background-color: #3b5998;
+}
+
+.social-link.instagram {
+    background-color: #c13584;
+}
+
+/* About Us Section */
+#about-us {
+    background: #f8f5ec;
+    padding: 50px;
+    text-align: center;
+}
+
+#about-us h1 {
+    font-size: 2.5rem;
+    color: #47220f;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.story-section, .mission-section, .values-section {
+    background: #f1ebe4;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+}
+
+.story-section h2, .mission-section h2, .values-section h2 {
+    font-size: 1.8rem;
+    color: #47220f;
+    margin-bottom: 15px;
+}
+
+.story-section p, .mission-section p, .values-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.values-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.values-section li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.values-section strong {
+    color: #47220f;
+}
