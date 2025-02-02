@@ -14,33 +14,87 @@
                     <li><a href="Order Online.html">Order Online</a></li>
                     <li><a href="About Us.html">About Us</a></li>
                     <li><a href="Contact Us.html">Contact Us</a></li>
-                    <a href="Store Locator.html" class="store-locator-icon">
-                        <img src="images/store-locator-icon.png" alt="Store Locator">
                     </a>
                 </ul>
             </nav>
         </header>
-
+        <!-- Wide Image Table -->
+        <div class="banner-container">
+          <img src="images/Banner.png" alt="Wide Banner" class="wide-banner">
+          <div class="banner-text">
+              <h1>Welcome to 581 Cafe</h1>
+              <p>Discover our delicious menu and order online for delivery or pickup! SIGMA BOI</p>
+          </div>
+      </div>
         <!-- Main Content -->
         <main>
-            <section>
-                <h1>Welcome to 581 Cafe</h1>
-                <p>Discover our delicious menu and order online for delivery or pickup!</p>
-            </section>
-        </main>
-
-        <footer>
-            <ul>
-                <li><a href="About Us.html">About Us</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="Contact Us.html">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">In-store Menu</a></li>
-                <li><a href="store-locator.html">Store Locator</a></li>
-                <li><a href="#">Franchising</a></li>
-            </ul>
-            <p>© 2024 581 Cafe. All rights reserved.</p>
-        </footer>
+          <!-- Best Seller Section -->
+          <section class="best-seller">
+            <h2>Best Seller</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="images/BestSeller.png" class="carousel-slide" alt="Best Seller 1">
+                        <img src="images/BestSeller2.png" class="carousel-slide" alt="Best Seller 2">
+                        <img src="images/BestSeller3.png" class="carousel-slide" alt="Best Seller 3">
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <script>
+                let slideIndex = 0;
+                const slides = document.querySelectorAll(".carousel-slide");
+                const track = document.querySelector(".carousel-track");
+        
+                function moveSlide(step) {
+                    slideIndex += step;
+        
+                    // Loop back when reaching the last/first slide
+                    if (slideIndex >= slides.length) slideIndex = 0;
+                    if (slideIndex < 0) slideIndex = slides.length - 1;
+        
+                    // Move the track to show the current slide
+                    const slideWidth = slides[0].clientWidth;
+                    track.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+                }
+        
+                // Initialize position on page load
+                document.addEventListener("DOMContentLoaded", () => {
+                    track.style.transform = `translateX(0)`;
+                });
+            </script>
+      </main>
+      <footer style="background-color: #47220f; color: #FFF3E0; padding: 30px 0; font-family: 'Arial', sans-serif;">
+        <div style="max-width: 1200px; margin: auto; display: flex; justify-content: space-evenly; align-items: flex-start; text-align: center;">
+            
+            <div class="footer-column">
+                <p class="footer-heading">ABOUT</p>
+                <a href="About Us.html" class="footer-link">About Us</a>
+                <a href="https://maps.app.goo.gl/oS7aTyW3S6HEpYcz9" target="_blank" class="footer-link">Store Locator</a>
+            </div>
+    
+            <div class="footer-column">
+                <p class="footer-heading">ORDER NOW</p>
+                <a href="https://www.foodpanda.ph/restaurant/wknp/581-cafe-m-oyson-jr-street" target="_blank" class="footer-link">FoodPanda</a>
+            </div>
+    
+            <div class="footer-column">
+                <p class="footer-heading">CONTACT</p>
+                <a class="email">581cafe@gmail.com</a>
+                <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+                    <a href="https://www.facebook.com/581CartCafe/" target="_blank"><img src="images/Facebook.png" alt="Facebook" style="width: 30px;"></a>
+                    <a href="https://www.instagram.com/581.cafe/" target="_blank"><img src="images/Instagram.png" alt="Instagram" style="width: 30px;"></a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px; font-size: 14px;">
+            <p>&copy; 2025 581 Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+    
+        
     </body>
 </html>
